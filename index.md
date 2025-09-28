@@ -1,12 +1,12 @@
 # **Top 10 Emojis in My LinkedIn Feed: A Python Data Analysis Tutorial**
-## **Introduction: Why Emoji Analysis Matters**
+### **Introduction: Why Emoji Analysis Matters**
 
 
 In today's digital communication landscape, emojis have become a universal language that transcends cultural and linguistic barriers. LinkedIn, traditionally seen as a professional networking platform, has increasingly embraced emoji usage as professionals seek to add personality and emotion to their posts. But which emojis dominate professional discourse?
 
 This tutorial will guide you through collecting LinkedIn post data, extracting emojis using Python's regex capabilities, and visualizing the most popular emojis in your feed. You'll learn practical skills in **text processing, data manipulation with pandas, and data visualization**—all essential tools for any data scientist's toolkit.
 
-## **What You'll Learn**
+### **What You'll Learn**
 By the end of this tutorial, you'll be able to:
 
 - Extract emojis from text using Unicode regex patterns
@@ -14,7 +14,7 @@ By the end of this tutorial, you'll be able to:
 - Count and rank emoji frequencies
 - Create compelling visualizations of text data
 
-## **Prerequisites and Setup**
+### **Prerequisites and Setup**
 Before we dive in, make sure you have these Python libraries installed:
 
 
@@ -81,7 +81,7 @@ def extract_emojis_all(text: str):
     return [cluster for cluster in clusters if is_real_emoji(cluster)]
 ```
 
-**Understanding the Regex Pattern**  
+### **Understanding the Regex Pattern**  
 <table>
   <thead>
     <tr>
@@ -159,7 +159,7 @@ print(df_top10.to_markdown(index=False))
     | 🎯      |       3 |
     
 
-## **Analyzing Our Results: Professional Emoji Patterns**
+### **Analyzing Our Results: Professional Emoji Patterns**
 Let's organize our findings into a comprehensive analysis table:  
 <table>
   <thead>
@@ -254,7 +254,7 @@ plt.show()
 The visualization will show a clear bar chart with the rocket emoji leading significantly, followed by the pointing finger emoji, creating a visual story of professional social media communication patterns.
 
 
-## **Understanding Your Results**
+### **Understanding Your Results**
 This emoji analysis reveals fascinating patterns about professional communication on LinkedIn:  
 - 🚀 **(Rocket - 11 times)**: Growth, innovation, and startup energy dominate professional discourse
 - 👉 **(Pointing Right - 9 times)**: Call-to-action and directing attention to key points
@@ -270,7 +270,7 @@ This emoji analysis reveals fascinating patterns about professional communicatio
 These patterns reveal how LinkedIn professionals use emojis strategically to drive engagement, **direct attention, and convey business value.**
 
 
-## **Extending This Analysis**
+### **Extending This Analysis**
 Want to take the emoji analysis further? Consider these enhancements:
 
 - **Temporal trends**: Track how emoji usage changes during business hours vs. weekends
@@ -279,7 +279,7 @@ Want to take the emoji analysis further? Consider these enhancements:
 - **Content type analysis**: Compare emoji usage in original posts vs. shared content
 
 
-## **Troubleshooting Common Issues (Afterthoughts on Data Collection)**
+### **Troubleshooting Common Issues (Afterthoughts on Data Collection)**
 
 ## **1. Sample Size Evolution**
 
@@ -312,7 +312,7 @@ If I counted every occurrence, one post could skew the results badly—essential
 ## **4. Relative Frequency (Percentages)**
 Raw counts are helpful, but percentages let us compare usage more intuitively across samples or networks.
 
-Formula:
+### Formula:
 
 $$
 f(x) = \frac{\text{count of emoji } x}{\text{total emoji count}}
