@@ -82,12 +82,32 @@ def extract_emojis_all(text: str):
 ```
 
 **Understanding the Regex Pattern**  
-| Pattern Component            | Meaning                                        |
-|-----------------------------|------------------------------------------------|
-| `\p{Emoji_Presentation}`    | Characters with emoji presentation by default  |
-| `\uFE0F`                     | Variation Selector-16 (forces emoji style)     |
-| `\u200D`                     | Zero-Width Joiner (combines emoji sequences)   |
-| `\p{Extended_Pictographic}` | Extended pictographic characters               |
+<table>
+  <thead>
+    <tr>
+      <th>Pattern Component</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>\p{Emoji_Presentation}</code></td>
+      <td>Characters with emoji presentation by default</td>
+    </tr>
+    <tr>
+      <td><code>\uFE0F</code></td>
+      <td>Variation Selector-16 (forces emoji style)</td>
+    </tr>
+    <tr>
+      <td><code>\u200D</code></td>
+      <td>Zero-Width Joiner (combines emoji sequences)</td>
+    </tr>
+    <tr>
+      <td><code>\p{Extended_Pictographic}</code></td>
+      <td>Extended pictographic characters</td>
+    </tr>
+  </tbody>
+</table>
 
 
 ## **Step 3: Load and Process Your Data**
@@ -141,18 +161,28 @@ print(df_top10.to_markdown(index=False))
 
 ## **Analyzing Our Results: Professional Emoji Patterns**
 Let's organize our findings into a comprehensive analysis table:  
-| Emoji | Count | Percentage | Context |
-|:-----:|------:|-----------:|---------|
-| 🚀    | 11    | 15.7%      | Growth, Innovation, Startup energy |
-| 👉    |  9    | 12.9%      | Call-to-action, Directing attention |
-| ✨    |  6    | 8.6%       | Achievement highlights, excellence |
-| 👇    |  6    | 8.6%       | Guiding to content below |
-| ✅    |  5    | 7.1%       | Success, Completion, Actionables |
-| ♻️    |  4    | 5.7%       | Sustainability, Reposting, Cycles |
-| 💡    |  4    | 5.7%       | Innovation, Ideas, Insights |
-| 🎉    |  4    | 5.7%       | Celebrations, Achievements |
-| ⚡    |  3    | 4.3%       | Speed, Energy, Breakthroughs |
-| 🎯    |  3    | 4.3%       | Goals, Precision, Objectives |
+|<table>
+  <thead>
+    <tr>
+      <th>Emoji</th>
+      <th style="text-align:right">Count</th>
+      <th style="text-align:right">Percentage</th>
+      <th>Context</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>🚀</td><td style="text-align:right">11</td><td style="text-align:right">15.7%</td><td>Growth, Innovation, Startup energy</td></tr>
+    <tr><td>👉</td><td style="text-align:right">9</td><td style="text-align:right">12.9%</td><td>Call-to-action, Directing attention</td></tr>
+    <tr><td>✨</td><td style="text-align:right">6</td><td style="text-align:right">8.6%</td><td>Achievement highlights, excellence</td></tr>
+    <tr><td>👇</td><td style="text-align:right">6</td><td style="text-align:right">8.6%</td><td>Guiding to content below</td></tr>
+    <tr><td>✅</td><td style="text-align:right">5</td><td style="text-align:right">7.1%</td><td>Success, Completion, Actionables</td></tr>
+    <tr><td>♻️</td><td style="text-align:right">4</td><td style="text-align:right">5.7%</td><td>Sustainability, Reposting, Cycles</td></tr>
+    <tr><td>💡</td><td style="text-align:right">4</td><td style="text-align:right">5.7%</td><td>Innovation, Ideas, Insights</td></tr>
+    <tr><td>🎉</td><td style="text-align:right">4</td><td style="text-align:right">5.7%</td><td>Celebrations, Achievements</td></tr>
+    <tr><td>⚡</td><td style="text-align:right">3</td><td style="text-align:right">4.3%</td><td>Speed, Energy, Breakthroughs</td></tr>
+    <tr><td>🎯</td><td style="text-align:right">3</td><td style="text-align:right">4.3%</td><td>Goals, Precision, Objectives</td></tr>
+  </tbody>
+</table>
 
 
 **Key Insight**: The top 4 emojis (🚀👉✨👇) account for 45.8% of all emoji usage, showing clear professional communication preferences.
