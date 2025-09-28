@@ -161,7 +161,7 @@ print(df_top10.to_markdown(index=False))
 
 ## **Analyzing Our Results: Professional Emoji Patterns**
 Let's organize our findings into a comprehensive analysis table:  
-|<table>
+<table>
   <thead>
     <tr>
       <th>Emoji</th>
