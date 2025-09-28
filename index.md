@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Top 10 Emojis in My LinkedIn Feed"
+---
+
 # **Top 10 Emojis in My LinkedIn Feed: A Python Data Analysis Tutorial**
 ## **Introduction: Why Emoji Analysis Matters**
 
