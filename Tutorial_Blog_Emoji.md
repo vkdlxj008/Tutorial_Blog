@@ -45,10 +45,16 @@ Let's start by importing the essential libraries for our analysis:
 
 
 ```python
+import io, requests, unicodedata
+import numpy as np
 import pandas as pd
 import regex as re
 from collections import Counter
 import matplotlib.pyplot as plt
+from matplotlib.offsetbox import OffsetImage, AnnotationBbox
+import logging, warnings
+logging.getLogger('matplotlib.font_manager').setLevel(logging.ERROR)
+warnings.filterwarnings("ignore", message=r"Glyph .* missing from font", category=UserWarning)
 ```
 
 ## **Step 2: Understanding Emoji Detection**
@@ -109,31 +115,28 @@ Now let's find the most popular emojis in your data:
 
 ```python
 top_10_emojis = emoji_counts.most_common(10)
+df_top10 = pd.DataFrame(top_10_emojis, columns=["Emoji", "Count"])
 
 print("Top 10 Emojis in LinkedIn Feed:")
 print("=" * 35)
-top_10_emojis
+print(df_top10.to_markdown(index=False))
 ```
 
     Top 10 Emojis in LinkedIn Feed:
     ===================================
+    | Emoji   |   Count |
+    |:--------|--------:|
+    | 🚀      |      11 |
+    | 👉      |       9 |
+    | ✨      |       6 |
+    | 👇      |       6 |
+    | ✅      |       5 |
+    | ♻️      |       4 |
+    | 💡      |       4 |
+    | 🎉      |       4 |
+    | ⚡      |       3 |
+    | 🎯      |       3 |
     
-
-
-
-
-    [('🚀', 11),
-     ('👉', 9),
-     ('✨', 6),
-     ('👇', 6),
-     ('✅', 5),
-     ('♻️', 4),
-     ('💡', 4),
-     ('🎉', 4),
-     ('⚡', 3),
-     ('🎯', 3)]
-
-
 
 ## **Analyzing Our Results: Professional Emoji Patterns**
 Let's organize our findings into a comprehensive analysis table:  
@@ -156,19 +159,11 @@ Transform your emoji data into an eye-catching bar chart:
 
 
 ```python
-import io, requests, unicodedata
-import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib.offsetbox import OffsetImage, AnnotationBbox
-import logging, warnings
-logging.getLogger('matplotlib.font_manager').setLevel(logging.ERROR)
-warnings.filterwarnings("ignore", message=r"Glyph .* missing from font", category=UserWarning)
-
 def emoji_to_codepoints(e: str) -> str:
     cps = []
     for ch in e:
         cp = ord(ch)
-        if cp in (0xFE0F, 0xFE0E):F
+        if cp in (0xFE0F, 0xFE0E):
             continue
         cps.append(f"{cp:x}")
     return "-".join(cps)
@@ -215,7 +210,6 @@ plt.tight_layout()
 
 plt.savefig('linkedin_emoji_analysis.png', dpi=300, bbox_inches='tight')
 plt.show()
-
 
 ```
 
