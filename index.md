@@ -82,12 +82,13 @@ def extract_emojis_all(text: str):
 ```
 
 **Understanding the Regex Pattern**  
-| Pattern Component | Meaning |
-|-------------------|---------|
-| `\p{Emoji_Presentation}` | Characters with emoji presentation by default |
-| `\uFE0F` | Variation Selector-16 (forces emoji presentation) |
-| `\u200D` | Zero Width Joiner (combines emoji sequences) |
-| `\p{Extended_Pictographic}` | Extended pictographic characters |
+| Pattern Component            | Meaning                                        |
+|-----------------------------|------------------------------------------------|
+| `\p{Emoji_Presentation}`    | Characters with emoji presentation by default  |
+| `\uFE0F`                     | Variation Selector-16 (forces emoji style)     |
+| `\u200D`                     | Zero-Width Joiner (combines emoji sequences)   |
+| `\p{Extended_Pictographic}` | Extended pictographic characters               |
+
 
 ## **Step 3: Load and Process Your Data**
 Assuming you have a CSV file with LinkedIn post data, load it and extract emojis:
@@ -140,18 +141,18 @@ print(df_top10.to_markdown(index=False))
 
 ## **Analyzing Our Results: Professional Emoji Patterns**
 Let's organize our findings into a comprehensive analysis table:  
-| Emoji | Count | Percentage | Context |
-|-------|-------|------------|---------|
-| 🚀 | 11 | 15.7% | Growth, Innomation, Startup energy |
-| 👉 | 9 | 12.9% | Call-to-action, Directing attention |
-| ✨ | 6 | 8.6% | Achievement highlights, excellence |
-| 👇 | 6 | 8.6% | Guiding to notent below |
-| ✅ | 5 | 7.1% | Success, Completion, Actionables |
-| ♻️ | 4 | 5.7% | Sustainability, Reposting, Cycles |
-| 💡 | 4 | 5.7% | Innovation, ideas, insights |
-| 🎉 | 4 | 5.7% | Celebrations, Achievements |
-| ⚡ | 3 | 4.3% | Speed, Energy, Breakthroughs |
-| 🎯 | 3 | 4.3% | Goals, Precision, Objectives |
+| Emoji   |   Count | Percentage   | Context                                |
+|:--------|--------:|:-------------|:---------------------------------------|
+| 🚀      |      11 | 15.7%        | Growth, Innovation, Startup energy     |
+| 👉      |       9 | 12.9%        | Call-to-action, Directing attention    |
+| ✨      |       6 | 8.6%         | Achievement highlights, excellence     |
+| 👇      |       6 | 8.6%         | Guiding to content below               |
+| ✅      |       5 | 7.1%         | Success, Completion, Actionables       |
+| ♻️      |       4 | 5.7%         | Sustainability, Reposting, Cycles      |
+| 💡      |       4 | 5.7%         | Innovation, Ideas, Insights            |
+| 🎉      |       4 | 5.7%         | Celebrations, Achievements             |
+| ⚡      |       3 | 4.3%         | Speed, Energy, Breakthroughs           |
+| 🎯      |       3 | 4.3%         | Goals, Precision, Objectives           |
 
 **Key Insight**: The top 4 emojis (🚀👉✨👇) account for 45.8% of all emoji usage, showing clear professional communication preferences.
 ## **Step 5: Create a Compelling Visualization**
@@ -273,27 +274,31 @@ If I counted every occurrence, one post could skew the results badly—essential
 ## **3. Statistical Takeaways**
 - **Representativeness matters**: small samples are vulnerable to distortion by a single extreme post.
 
-- **Sample size effect**: larger $n$ smooths out fluctuations and yields more reliable proportions.
+- **Sample size effect**: larger \( n \) smooths out fluctuations and yields more reliable proportions.
 
 - **Operational definitions**: setting clear, consistent counting rules (e.g., repeated emojis per post) is essential for reproducibility.
 
-##**4. Relative Frequency (Percentages)**
+## **4. Relative Frequency (Percentages)**
 Raw counts are helpful, but percentages let us compare usage more intuitively across samples or networks.
 
 Formula:
 
-$$ f(x) = \frac{\text{count of emoji } x}{\text{total emoji count}} $$
+$$
+f(x) = \frac{\text{count of emoji } x}{\text{total emoji count}}
+$$
 
 Example:
 
 - If the top emoji 🚀 appears 11 times in a dataset of 70 total emojis:
 
-$$ f(\ 🚀\ ) = \frac{11}{70} \approx 0.157 $$
+$$
+f(\text{🚀}) = \frac{11}{70} \approx 0.157
+$$
 
 So about **15.7%** of all emojis in my sample were 🚀, signaling its strong association with LinkedIn's “growth/innovation” vibe.
 
 
-##**Call to Action**
+## **Call to Action**
 **Try this analysis on your own social media data!** Here's what I want you to do:
 
 1. **Fork this analysis**: Adapt the code for Twitter, Instagram, or your preferred platform
