@@ -313,9 +313,6 @@ So about **15.7%** of all emojis in my sample were 🚀, signaling its strong as
 
 
 
-```python
-
-```
 <script>
   window.MathJax = {
     tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']] },
