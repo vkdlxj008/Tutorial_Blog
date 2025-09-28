@@ -115,7 +115,7 @@ Assuming you have a CSV file with LinkedIn post data, load it and extract emojis
 
 
 ```python
-df = pd.read_csv("imoji_data.csv")
+df = pd.read_csv("emoji_data.csv")
 
 df["emojis"] = df["post_text"].apply(extract_emojis_all)
 
