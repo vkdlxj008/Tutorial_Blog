@@ -1,8 +1,3 @@
----
-layout: default
-title: "Top 10 Emojis in My LinkedIn Feed"
----
-
 # **Top 10 Emojis in My LinkedIn Feed: A Python Data Analysis Tutorial**
 ## **Introduction: Why Emoji Analysis Matters**
 
@@ -146,18 +141,19 @@ print(df_top10.to_markdown(index=False))
 
 ## **Analyzing Our Results: Professional Emoji Patterns**
 Let's organize our findings into a comprehensive analysis table:  
-| Emoji   |   Count | Percentage   | Context                                |
-|:--------|--------:|:-------------|:---------------------------------------|
-| 🚀      |      11 | 15.7%        | Growth, Innovation, Startup energy     |
-| 👉      |       9 | 12.9%        | Call-to-action, Directing attention    |
-| ✨      |       6 | 8.6%         | Achievement highlights, excellence     |
-| 👇      |       6 | 8.6%         | Guiding to content below               |
-| ✅      |       5 | 7.1%         | Success, Completion, Actionables       |
-| ♻️      |       4 | 5.7%         | Sustainability, Reposting, Cycles      |
-| 💡      |       4 | 5.7%         | Innovation, Ideas, Insights            |
-| 🎉      |       4 | 5.7%         | Celebrations, Achievements             |
-| ⚡      |       3 | 4.3%         | Speed, Energy, Breakthroughs           |
-| 🎯      |       3 | 4.3%         | Goals, Precision, Objectives           |
+| Emoji | Count | Percentage | Context |
+|:-----:|------:|-----------:|---------|
+| 🚀    | 11    | 15.7%      | Growth, Innovation, Startup energy |
+| 👉    |  9    | 12.9%      | Call-to-action, Directing attention |
+| ✨    |  6    | 8.6%       | Achievement highlights, excellence |
+| 👇    |  6    | 8.6%       | Guiding to content below |
+| ✅    |  5    | 7.1%       | Success, Completion, Actionables |
+| ♻️    |  4    | 5.7%       | Sustainability, Reposting, Cycles |
+| 💡    |  4    | 5.7%       | Innovation, Ideas, Insights |
+| 🎉    |  4    | 5.7%       | Celebrations, Achievements |
+| ⚡    |  3    | 4.3%       | Speed, Energy, Breakthroughs |
+| 🎯    |  3    | 4.3%       | Goals, Precision, Objectives |
+
 
 **Key Insight**: The top 4 emojis (🚀👉✨👇) account for 45.8% of all emoji usage, showing clear professional communication preferences.
 ## **Step 5: Create a Compelling Visualization**
