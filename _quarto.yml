@@ -1,0 +1,18 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Top 10 Emojis in My LinkedIn Feed"
+  navbar:
+    left:
+      - href: index.md
+        text: Home
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-fold: false
+    number-sections: true
+    css: styles.css

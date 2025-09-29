@@ -110,6 +110,7 @@ def extract_emojis_all(text: str):
 </table>
 
 
+
 ## **Step 3: Load and Process Your Data**
 Assuming you have a CSV file with LinkedIn post data, load it and extract emojis:
 
@@ -256,16 +257,16 @@ The visualization will show a clear bar chart with the rocket emoji leading sign
 
 ### **Understanding Your Results**
 This emoji analysis reveals fascinating patterns about professional communication on LinkedIn:  
-- 🚀 **(Rocket - 11 times)**: Growth, innovation, and startup energy dominate professional discourse
-- 👉 **(Pointing Right - 9 times)**: Call-to-action and directing attention to key points
-- ✨ **(Sparkles - 6 times)**: Adding excitement and highlighting achievements
-- 👇 **(Pointing Down - 6 times)**: Guiding readers to important information below
-- ✅ **(Check Mark - 5 times)**: Completion, success, and actionable takeaways
-- ♻️ **(Recycle - 4 times)**: Sustainability, reposting, or circular processes
-- 💡 **(Light Bulb - 4 times)**: Innovation, ideas, and insights
-- 🎉 **(Party - 4 times)**: Celebrations, achievements, and positive news
-- ⚡ **(Lightning - 3 times)**: Speed, energy, and breakthrough moments
-- 🎯 **(Target - 3 times)**: Goals, precision, and focused objectives  
+-  🚀 **(Rocket - 11 times)**: Growth, innovation, and startup energy dominate professional discourse  
+-  👉 **(Pointing Right - 9 times)**: Call-to-action and directing attention to key points  
+-  ✨ **(Sparkles - 6 times)**: Adding excitement and highlighting achievements  
+-  👇 **(Pointing Down - 6 times)**: Guiding readers to important information below  
+-  ✅ **(Check Mark - 5 times)**: Completion, success, and actionable takeaways  
+- ♻️ **(Recycle - 4 times)**: Sustainability, reposting, or circular processes  
+-  💡 **(Light Bulb - 4 times)**: Innovation, ideas, and insights  
+-  🎉 **(Party - 4 times)**: Celebrations, achievements, and positive news  
+-  ⚡ **(Lightning - 3 times)**: Speed, energy, and breakthrough moments  
+-  🎯 **(Target - 3 times)**: Goals, precision, and focused objectives  
 
 These patterns reveal how LinkedIn professionals use emojis strategically to drive engagement, **direct attention, and convey business value.**
 
