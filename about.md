@@ -1,22 +1,30 @@
----
-layout: default
-title: About Me
----
+<style>
+  .about-hero{
+    display:flex; align-items:flex-start; gap:30px; margin:30px 0; flex-wrap:wrap;
+  }
+  .about-hero .photo{ flex:0 0 250px; }
+  .about-hero .photo img{
+    width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    display:block;
+  }
+  .about-hero .intro{ flex:1 1 280px; min-width:260px; }
+  @media (max-width: 700px){
+    .about-hero{ flex-direction:column; }
+  }
+</style>
 
 # About Me
 
-<div style="display: flex; align-items: flex-start; gap: 30px; margin: 30px 0;">
-  <div style="flex-shrink: 0;">
-    <img src="./assets/image/EDP_1762.jpg" 
-         alt="Jun's Profile Photo" 
-         style="width: 250px; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+<div class="about-hero">
+  <div class="photo">
+    <img src="{{ '/assets/image/EDP_1762.jpg' | relative_url }}" alt="Jun's Profile Photo">
   </div>
-  
-  <div style="flex-grow: 1;">
+  <div class="intro">
     <h2>👋 Introduction</h2>
     <p>I'm Jun Kim, a statistics student at Brigham Young University passionate about turning data into insights and meaningful stories.</p>
   </div>
 </div>
+
 
 ## 🎓 Education
 
