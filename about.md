@@ -1,32 +1,35 @@
 <style>
-  .about-hero{
-    display:flex; align-items:flex-start; gap:30px; margin:30px 0; flex-wrap:wrap;
-  }
-  .about-hero .photo{ flex:0 0 250px; }
-  .about-hero .photo img{
-    width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);
-    display:block;
-  }
-  .about-hero .intro{ flex:1 1 280px; min-width:260px; }
-  @media (max-width: 700px){
-    .about-hero{ flex-direction:column; }
-  }
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+.about-container img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.about-text {
+  flex: 1 1 300px;
+  min-width: 250px;
+}
+@media (max-width: 700px) {
+  .about-container { flex-direction: column; }
+}
 </style>
 
 # About Me
 
-<div class="about-hero">
-  <div class="photo">
-    <img src="{{ site.baseurl }}/assets/image/EDP_1762.jpg"
-         alt="Jun's Profile Photo"
-         onerror="this.onerror=null;this.src='assets/image/EDP_1762.jpg';">
-  </div>
-  <div class="intro">
+<div class="about-container">
+  <img src="assets/image/EDP_1762.jpg" alt="Jun's Profile Photo">
+  <div class="about-text">
     <h2>👋 Introduction</h2>
     <p>I'm Jun Kim, a statistics student at Brigham Young University passionate about turning data into insights and meaningful stories.</p>
   </div>
 </div>
-
 
 ## 🎓 Education
 
