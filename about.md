@@ -1,41 +1,28 @@
-
-<style>
-.about-container {
-  display: flex;
-  align-items: flex-start;
-  gap: 30px;
-  margin: 30px 0;
-  flex-wrap: wrap;
-}
-.about-container img {
-  width: 250px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-.about-text {
-  flex: 1 1 300px;
-  min-width: 250px;
-}
-@media (max-width: 700px) {
-  .about-container { flex-direction: column; }
-}
-</style>
-
 # About Me
 
-<div style="display:flex; align-items:flex-start; gap:24px; margin:24px 0; flex-wrap:wrap;">
-  <img
-    src="assets/image/EDP_1762.jpg"
-    alt="Jun's Profile Photo"
-    loading="lazy"
-    style="width:250px; max-width:250px; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); flex-shrink:0;"
-  >
-  <div style="flex:1 1 300px; min-width:260px;">
-    <h2>👋 Introduction</h2>
-    <p>I'm Jun Kim, a statistics student at Brigham Young University passionate about turning data into insights and meaningful stories.</p>
-  </div>
-</div>
+<table style="width:100%; border-collapse:collapse; font-size:15px; line-height:1.6;">
+  <tr>
+    <!-- 왼쪽: 사진 -->
+    <td style="width:200px; vertical-align:top; padding-right:20px;">
+      <img src="assets/image/EDP_1762.jpg"
+           alt="Jun's Profile Photo"
+           style="width:160px; max-height:240px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); display:block; object-fit:cover;">
+    </td>
+    <!-- 오른쪽: 소개글 -->
+    <td style="vertical-align:top;">
+      <h2 style="font-size:18px;">👋 Introduction</h2>
+      <p style="font-size:15px;">
+        I'm Jun Kim, a statistics student at Brigham Young University passionate about turning data into insights and meaningful stories.<br>
+        I was born and raised in Jeju Island, South Korea, where I first pursued music and majored in piano performance.<br>
+        After coming to BYU, I was inspired by the growing influence of artificial intelligence and data science, which led me to dive into the world of statistics and AI research.<br>
+        Now, I strive to blend creativity from my musical background with analytical rigor to uncover patterns and build data-driven solutions.
+      </p>
+    </td>
+  </tr>
+</table>
+
+
+
 
 ## 🎓 Education
 
