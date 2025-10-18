@@ -17,7 +17,9 @@
 
 <div class="about-hero">
   <div class="photo">
-    <img src="{{ '/assets/image/EDP_1762.jpg' | relative_url }}" alt="Jun's Profile Photo">
+    <img src="{{ site.baseurl }}/assets/image/EDP_1762.jpg"
+         alt="Jun's Profile Photo"
+         onerror="this.onerror=null;this.src='assets/image/EDP_1762.jpg';">
   </div>
   <div class="intro">
     <h2>👋 Introduction</h2>
