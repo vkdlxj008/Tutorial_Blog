@@ -1,31 +1,17 @@
-<style>
-.about-container {
-  display: flex;
-  align-items: flex-start;
-  gap: 30px;
-  margin: 30px 0;
-  flex-wrap: wrap;
-}
-.about-container img {
-  width: 250px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-.about-text {
-  flex: 1 1 300px;
-  min-width: 250px;
-}
-@media (max-width: 700px) {
-  .about-container { flex-direction: column; }
-}
-</style>
+
 
 # About Me
 
-<div class="about-container">
-  <img src="assets/image/EDP_1762.jpg" alt="Jun's Profile Photo">
-  <div class="about-text">
+# About Me
+
+<div style="display:flex; align-items:flex-start; gap:24px; margin:24px 0; flex-wrap:wrap;">
+  <img
+    src="assets/image/EDP_1762.jpg"
+    alt="Jun's Profile Photo"
+    loading="lazy"
+    style="width:250px; max-width:250px; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); flex-shrink:0;"
+  >
+  <div style="flex:1 1 300px; min-width:260px;">
     <h2>👋 Introduction</h2>
     <p>I'm Jun Kim, a statistics student at Brigham Young University passionate about turning data into insights and meaningful stories.</p>
   </div>
