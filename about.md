@@ -15,6 +15,7 @@ title: About Me
     <p>I'm Jun Kim, a statistics student at Brigham Young University passionate about turning data into insights and meaningful stories.</p>
   </div>
 </div>
+
 ## 🎓 Education
 
 **Brigham Young University**  
