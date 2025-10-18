@@ -9,7 +9,8 @@ kramdown:
     block:
       line_numbers: false
 
-# Navigation
+# Add navigation
 header_pages:
   - index.md
+  - tutorial.md
   - about.md
