@@ -5,7 +5,7 @@ title: About Me
 
 # About Me
 
-![Your Photo](./assets/image/EDP_1762.jpg)
+<img src="./assets/image/EDP_1762.jpg" alt="Profile Photo" width="300">
 
 ## 👋 Introduction
 
