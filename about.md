@@ -3,6 +3,8 @@ layout: default
 title: About Me
 ---
 
+# About Me
+
 <div style="display: flex; align-items: flex-start; gap: 30px; margin: 30px 0;">
   <div style="flex-shrink: 0;">
     <img src="./assets/image/EDP_1762.jpg" 
