@@ -1,9 +1,15 @@
-title: Tutorial Blog
+title: Jun's Blog
 theme: jekyll-theme-minimal
 markdown: kramdown
+
 kramdown:
   input: GFM
   math_engine: mathjax
   syntax_highlighter_opts:
     block:
       line_numbers: false
+
+# Navigation
+header_pages:
+  - index.md
+  - about.md
