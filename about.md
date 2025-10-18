@@ -1,6 +1,26 @@
 
-
-# About Me
+<style>
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+.about-container img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.about-text {
+  flex: 1 1 300px;
+  min-width: 250px;
+}
+@media (max-width: 700px) {
+  .about-container { flex-direction: column; }
+}
+</style>
 
 # About Me
 
