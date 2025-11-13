@@ -62,7 +62,7 @@ Using a refined keyword model, albums were further classified as:
 ## 📈 Exploratory Data Analysis (EDA)
 
 ### 1️⃣ Decade Trends by Genre
-<img src="/Tutorial_Blog/blog/hybrid_decade_counts.png" alt="Decade by Genre" width="80%">
+<img src="/Tutorial_Blog/assets/image/hybrid_decade_counts.png" alt="Decade by Genre" width="80%">
 
 > The **1980–2000** period marks a surge in both *PianoSolo* and *Hybrid* albums,  
 > likely due to advances in digital recording and renewed interest in solo performance.
@@ -70,7 +70,7 @@ Using a refined keyword model, albums were further classified as:
 ---
 
 ### 2️⃣ Share of Piano-Related Albums
-<img src="/Tutorial_Blog/blog/hybrid_piano_share.png" alt="Piano Share" width="80%">
+<img src="/Tutorial_Blog/assets/image/hybrid_piano_share.png" alt="Piano Share" width="80%">
 
 > Piano-related recordings account for roughly **70–90%** of all classical albums between 1970 and 2000,  
 > suggesting a clear emphasis on piano works in modern recording culture.
@@ -78,7 +78,7 @@ Using a refined keyword model, albums were further classified as:
 ---
 
 ### 3️⃣ Total Album Output by Decade
-<img src="/Tutorial_Blog/blog/hybrid_total_albums.png" alt="Total Albums" width="80%">
+<img src="/Tutorial_Blog/assets/image/hybrid_total_albums.png" alt="Total Albums" width="80%">
 
 > Overall album production grows steadily through the late 20th century,  
 > reflecting the expansion of recording technology and classical archives.
