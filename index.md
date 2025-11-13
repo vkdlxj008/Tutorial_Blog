@@ -18,7 +18,7 @@ Hi! I'm Jun, a statistics student passionate about data analysis and visualizati
 
 **[Top 10 Emojis in My LinkedIn Feed: A Python Data Analysis Tutorial](./tutorial.html)**
 
-**[Piano vs Orchestra Album Trends in the U.S. (1900–2020)](./data_acq.md)**
+**[Piano vs Orchestra Album Trends in the U.S. (1900–2020)](./data_acq.html)**
 
 Learn how to extract, analyze, and visualize emoji usage patterns from social media data using Python, pandas, and matplotlib.
 
