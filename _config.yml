@@ -13,4 +13,5 @@ kramdown:
 header_pages:
   - index.md
   - tutorial.md
+  - data_acq.md
   - about.md
