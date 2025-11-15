@@ -1,12 +1,12 @@
-# 🎵 Piano vs Orchestra Album Trends in the U.S. (1900–2020)
+#  Piano vs Orchestra Album Trends in the U.S. (1900–2020)
 
-## 🧠 Research Question
+##  Research Question
 How has the balance between piano-related and orchestra-related classical album production in the United States evolved between 1900 and 2020?
 
 ---
 
-## 🎯 Project Overview
-This post presents my STAT 251 Data Curation project, which curates an original dataset using the **MusicBrainz WS/2 API**.  
+##  Project Overview
+This post presents my STAT 386 Data Curation project, which curates an original dataset using the **MusicBrainz WS/2 API**.  
 The goal is to explore how **piano-centered** and **orchestra-centered** classical recordings have changed over time in the U.S.
 
 The project consists of three stages:
@@ -16,7 +16,7 @@ The project consists of three stages:
 
 ---
 
-## 📦 Data Collection
+##  Data Collection
 
 **Source:** [MusicBrainz API](https://musicbrainz.org/doc/Development/XML_Web_Service/Version_2)
 
@@ -35,7 +35,7 @@ The project consists of three stages:
 
 ---
 
-## 🧮 Data Refinement
+##  Data Refinement
 Using a refined keyword model, albums were further classified as:
 
 - **PianoSolo:** Piano or related solo works (e.g., *Etudes*, *Preludes*, *Nocturnes*)
@@ -53,9 +53,9 @@ Using a refined keyword model, albums were further classified as:
 
 ---
 
-## 📈 Exploratory Data Analysis (EDA)
+##  Exploratory Data Analysis (EDA)
 
-### 1️⃣ Decade Trends by Genre
+###  Decade Trends by Genre
 <img src="assets/image/hybrid_decade_counts.png" alt="Decade by Genre" width="80%">
 
 > The **1980–2000** period marks a surge in both *PianoSolo* and *Hybrid* albums,  
@@ -71,7 +71,7 @@ Using a refined keyword model, albums were further classified as:
 
 ---
 
-### 3️⃣ Total Album Output by Decade
+###  Total Album Output by Decade
 <img src="assets/image/hybrid_total_albums.png" alt="Total Albums" width="80%">
 
 > Overall album production grows steadily through the late 20th century,  
@@ -79,7 +79,7 @@ Using a refined keyword model, albums were further classified as:
 
 ---
 
-## 🧩 Key Findings
+##  Key Findings
 - Piano-related recordings (Solo + Hybrid) **dominate** modern classical output after 1970  
 - Orchestra-only albums remain steady but represent a smaller proportion of releases  
 - Early 20th-century data is sparse due to incomplete metadata  
@@ -87,7 +87,7 @@ Using a refined keyword model, albums were further classified as:
 
 ---
 
-## 💡 Interpretation
+##  Interpretation
 These trends align with the historical development of recording media:
 - 1950–70s: Rise of **LPs and stereo recordings** enabled large orchestral works  
 - 1980–2000: **Digital and CD era** revived solo performance recordings  
@@ -97,7 +97,7 @@ In short, the spotlight of U.S. classical recording gradually shifted from the c
 
 ---
 
-## ⚙️ Technical Notes
+##  Technical Notes
 - **Language:** Python (requests, pandas, matplotlib)  
 - **Data Source:** MusicBrainz (CC0 License)  
 - **Pipeline:** `source/run_pipeline.py` automates collection → classification → aggregation  
@@ -105,7 +105,7 @@ In short, the spotlight of U.S. classical recording gradually shifted from the c
 
 ---
 
-## ✍️ Author
+##  Author
 **Jun Kim** — STAT 386 Data Curation Project  
 [GitHub Repository](https://github.com/vkdlxj008/musicbrainz_API_scraping)
 
